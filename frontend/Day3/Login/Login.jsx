@@ -5,8 +5,27 @@ import { useNavigate } from 'react-router-dom'
 // import { Button } from '@mui/material'
 // import GroupsIcon from '@mui/icons-material/Groups';
 import CheckIcon from '@mui/icons-material/Check';
+import { useState } from 'react';
 export const Login = () => {
     const navigate=useNavigate();
+    const [login,setLogin]=useState({
+      email:'',password:''
+    })
+    const handleChange=(e)=>{
+      e.preventDefault();
+      setLogin({...login,[e.target.id]:e.target.value});
+    }
+    const handleSubmit=(e)=>{
+      e.preventDefault();
+      if(login.email==="lingesh@gmail.com" && login.password==="lingesh")
+      {
+        navigate('/admin/home')
+      }
+      else
+      {
+        navigate('/user/home')
+      }
+    }
   return (
     <div className="loginbody">
         <div className="logintop mt-[42px] h-[563px]">
@@ -22,15 +41,15 @@ export const Login = () => {
         <div className="loginbox items-center w-[35%] ml-[48%] mt-[-29%] h-[340px]  ">
             <div className="linemail">
                 <label >Email ID<span className='text-red-500'>*</span></label>
-                <input className="lin h-[30px] mt-1" type="text" placeholder="Enter your email" />
+                <input className="lin h-[30px] mt-1" type="text" id='email' onChange={handleChange} placeholder="Enter your email" />
                 {/* <h5 style={{marginTop:'-12px',fontWeight:'lighter',fontSize:'13px'}}>we will send relevant jobs to this email</h5> */}
             </div>
             <div className="linpassword">
                 <label>Password<span className='text-red-500'>*</span></label>
-                <input className="lin h-[30px] mt-1"  type="text" placeholder="Enter your password" />
+                <input className="lin h-[30px] mt-1" id='password' onChange={handleChange} type="text" placeholder="Enter your password" />
             </div>
            
-            <button  className="lbut" onClick={()=>{navigate('/user/home')}}>Login</button>
+            <button  className="lbut" onClick={handleSubmit}>Login</button>
             <h3 className='font-semibold mt-5 w-[300px] ml-[30px]' >New user ? <span className='text-1xl font-semibold text-blue-700' style={{cursor:'pointer'}} onClick={()=>{navigate('/')}}>Create One</span></h3>
             </div>
             <h3 className='text-1xl font-semibold ml-[320px]'><span className="text-1xl font-bold">Note : </span>All your details are stored securely and are visible only to the verified recruiters. </h3>
