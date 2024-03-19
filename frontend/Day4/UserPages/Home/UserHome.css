@@ -1,0 +1,18 @@
+.userhomebody{
+    margin-left: 300px;
+    margin-top : 100px;
+}
+.totaljobs,.totalapplied{
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    width:25vw;
+    height:25vh;
+    margin-bottom: 20px;
+}
+.totaljobs:hover,.totalapplied:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1); 
+}
+.userhomebox{
+display: grid;
+grid-template-columns: 400px 400px 300px;
+}
