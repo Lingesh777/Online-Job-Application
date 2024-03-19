@@ -1,0 +1,30 @@
+
+.applicationbody {
+  margin-top: 100px; 
+  margin-left: 150px; 
+}
+
+/* Styles for the table */
+.applicationtable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.applicationtable th,
+.applicationtable td {
+  padding: 10px;
+  text-align: left;
+}
+
+
+.view {
+  cursor: pointer;
+  border-bottom: 1px solid #ccc; 
+  padding-bottom: 10px; 
+}
+.view:hover{
+  transform: scale(1.02);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+  
