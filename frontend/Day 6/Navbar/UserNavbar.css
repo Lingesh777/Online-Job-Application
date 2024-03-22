@@ -1,0 +1,44 @@
+.usernavright,.usernavbar{
+display: grid;
+grid-template-columns: 200px 200px 200px 200px ;
+}
+.navtext{
+    cursor:pointer;
+    font-weight: 700;
+}
+.usernavbar{
+    /* border:2px solid black; */
+    box-shadow: 0px 4px 25px rgba(105, 192, 250, 0.308);
+    position: fixed;
+    width:100%;
+    background-color: white;
+    top:0
+
+}
+.navinput{
+    /* border:2px solid black; */
+    border-bottom: 2px solid black;
+    /* border-left:2px solid black; */
+    border-radius:10px;
+}
+.navinput::placeholder{
+    font-weight:700;
+    color: black;
+}
+.searchbox{
+    position: relative;
+}
+.searchicon{
+    position:absolute;
+    top:5px;
+    left:5px;
+}
+.navinput{
+    padding-left: 30px;
+    padding-bottom: 5px;
+    height: 40px;
+    /* margin-left: 10px; */
+}
+.navtext:hover{
+    color:rgb(20, 163, 247);
+}

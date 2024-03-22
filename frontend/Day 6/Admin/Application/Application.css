@@ -1,0 +1,54 @@
+/* ApplicationReceived.css */
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+/* Filter Box */
+.filter-box {
+  /* background-color: #f9f9f9; */
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-left: 750px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
+  width: 30%;
+}
+
+.filter-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.filter-box label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Applications Table */
+.applicationtable {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.applicationtable th,
+.applicationtable td {
+  padding: 12px;
+  text-align: left;
+}
+
+.view {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.view:hover {
+  transform: scale(1.02);
+  /* box-shadow: 0px 4px 8px rgba(116, 201, 240, 0.1); */
+  box-shadow: 0px 2px 15px rgba(105, 192, 250, 0.938);
+}
