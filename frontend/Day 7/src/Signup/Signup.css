@@ -1,0 +1,77 @@
+.signupbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7f6;
+  }
+  
+  .signupbox {
+    background-color: #ffffff;
+    /* border-radius: 10px; */
+    /* box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1); */
+    padding: 30px;
+    width: 440px;
+    /* position:absolute;
+    left:70% */
+  }
+  
+  .signuptop {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* .sin {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  } */
+  .sin {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc; /* Add bottom border only */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box shadow */
+  }
+  
+  
+  .sinpos {
+    margin-bottom: 20px;
+  }
+  
+  .sinpos h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .sinpos label {
+    margin-right: 10px;
+  }
+  
+  .sbut {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+ .signuptop{
+    /* border:2px solid black; */
+    /* margin-right:1px; */
+
+    background-color: #ffffff;
+    /* border-radius: 10px; */
+    box-shadow: 0px 4px 25px rgba(105, 192, 250, 0.938);
+ }

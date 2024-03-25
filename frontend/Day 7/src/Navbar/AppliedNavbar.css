@@ -1,0 +1,13 @@
+.appliednavelement{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+}
+.appliednavbar{
+    border-bottom: 2px solid gray;
+    width:70%;
+    margin-left: 150px;
+}
+.appnavcont:hover{
+    color:rgb(20, 163, 247);
+}
