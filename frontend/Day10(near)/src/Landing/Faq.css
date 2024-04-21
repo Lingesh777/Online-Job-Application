@@ -1,0 +1,40 @@
+.collapsible {
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    padding: 18px;
+    width: 60%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-weight: bold;
+    transition: background-color 0.4s;
+  }
+  
+  .collapsible:hover {
+    background-color: #ddd;
+  }
+  
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-weight: 200;
+  }
+  
+  .answer.active {
+    max-height: 100px; /* Set the maximum height you want for the answer */
+    transition: max-height 0.25s ease-in;
+  }
+  .faqs
+  {
+    margin-left: 40%;
+    margin-top: 4%;
+    font-weight: bold;
+  }
+  .question
+  {
+    margin-left: -19%;
+    padding: 2%;
+  }
+  
